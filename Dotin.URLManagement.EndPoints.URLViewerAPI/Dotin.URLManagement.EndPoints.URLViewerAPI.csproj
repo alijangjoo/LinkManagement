@@ -5,6 +5,11 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Dotin.URLManagement.Core.ApplicationServices\Dotin.URLManagement.Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\Dotin.URLManagement.Infra.DAL\Dotin.URLManagement.Infra.DAL.csproj" />
+  </ItemGroup>
+
 
 
 </Project>

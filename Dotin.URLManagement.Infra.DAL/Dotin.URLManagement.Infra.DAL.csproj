@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="URLViewer\Entities\" />
-    <Folder Include="URLViewer\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>

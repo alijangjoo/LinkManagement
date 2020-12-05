@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="URLViewer\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Dotin.URLManagement.Core.Contracts\Dotin.URLManagement.Core.Contracts.csproj" />
   </ItemGroup>
 
