@@ -3,14 +3,16 @@ using Dotin.URLManagement.Infra.DAL.DatabaseContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Dotin.URLManagement.Infra.DAL.Migrations
 {
     [DbContext(typeof(URLManagementDbContext))]
-    partial class URLManagementDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201205181825_addUrlViewerInfoEntity")]
+    partial class addUrlViewerInfoEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

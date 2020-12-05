@@ -13,6 +13,18 @@
         public async Task<string> GetMainURL(string shortenerURL)
         {
             string mainURL = await urlViewerRepository.GetURL(shortenerURL);
+            if (!string.IsNullOrEmpty(mainURL))
+            {
+                if (urlViewerRepository.ViewerLogRowInfoExists().Result)
+                {
+                    await urlViewerRepository.IncreementViewerLogInfo();
+                }
+                else
+                {
+                    await urlViewerRepository.AddInfo();
+                    await urlViewerRepository.IncreementViewerLogInfo();
+                }
+            }
             return await Task.FromResult(mainURL);
         }
     }

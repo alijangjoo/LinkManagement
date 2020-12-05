@@ -5,5 +5,8 @@
     public interface IURLViewerRepository
     {
         Task<string> GetURL(string shortenerURL);
+        Task<bool> ViewerLogRowInfoExists();
+        Task<bool> IncreementViewerLogInfo();
+        Task<bool> AddInfo();
     }
 }
